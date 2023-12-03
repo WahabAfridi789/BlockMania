@@ -1,0 +1,1257 @@
+[
+    {
+        "id": 1,
+        "product": {
+            "title": "Funny NFT",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/liveBidding/liveBidding2.jpg"
+            }
+        },
+        "volume": "7,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "-"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "33.02",
+        "owners": "3k",
+        "items": "10k"
+    },
+
+    {
+        "id": 1,
+        "product": {
+            "title": "Funny NFT",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/liveBidding/liveBidding2.jpg"
+            }
+        },
+        "volume": "7,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "-"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "33.02",
+        "owners": "3k",
+        "items": "10k"
+    },
+    {
+        "id": 2,
+        "product": {
+            "title": "Bored Ape #1",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/liveBidding/liveBidding3.jpg"
+            }
+        },
+        "volume": "1,20,000",
+        "24h%": {
+            "charge": "250.50%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "80.75%",
+            "status": "+"
+        },
+        "floor_price": "50.25",
+        "owners": "1.5k",
+        "items": "5k"
+    },
+    {
+        "id": 3,
+        "product": {
+            "title": "Bored Ape #2",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/liveBidding/liveBidding4.jpg"
+            }
+        },
+        "volume": "2,50,000",
+        "24h%": {
+            "charge": "180.75%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "120.50%",
+            "status": "+"
+        },
+        "floor_price": "42.75",
+        "owners": "2.2k",
+        "items": "7.5k"
+    },
+    {
+        "id": 4,
+        "product": {
+            "title": "Bored Ape #3",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/liveBidding/liveBidding5.jpg"
+            }
+        },
+        "volume": "1,80,000",
+        "24h%": {
+            "charge": "150.25%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "98.60%",
+            "status": "+"
+        },
+        "floor_price": "38.20",
+        "owners": "1.8k",
+        "items": "6.5k"
+    },
+    {
+        "id": 5,
+        "product": {
+            "title": "Bored Ape #4",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/liveBidding/liveBidding6.jpg"
+            }
+        },
+        "volume": "2,40,000",
+        "24h%": {
+            "charge": "210.15%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "88.90%",
+            "status": "+"
+        },
+        "floor_price": "45.60",
+        "owners": "2.5k",
+        "items": "8k"
+    },
+    {
+        "id": 6,
+        "product": {
+            "title": "Bored Ape #5",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/liveBidding/liveBidding7.jpg"
+            }
+        },
+        "volume": "1,60,000",
+        "24h%": {
+            "charge": "190.40%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "75.80%",
+            "status": "+"
+        },
+        "floor_price": "35.80",
+        "owners": "1.6k",
+        "items": "6k"
+    },
+    {
+        "id": 7,
+        "product": {
+            "title": "Bored Ape #6",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/liveBidding/liveBidding8.jpg"
+            }
+        },
+        "volume": "3,00,000",
+        "24h%": {
+            "charge": "220.85%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "105.75%",
+            "status": "+"
+        },
+        "floor_price": "48.40",
+        "owners": "2.8k",
+        "items": "9k"
+    },
+    {
+        "id": 8,
+        "product": {
+            "title": "Bored Ape #7",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/liveBidding/liveBidding9.jpg"
+            }
+        },
+        "volume": "2,10,000",
+        "24h%": {
+            "charge": "275.30%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "95.20%",
+            "status": "+"
+        },
+        "floor_price": "39.90",
+        "owners": "2.3k",
+        "items": "7.8k"
+    },
+    {
+        "id": 9,
+        "product": {
+            "title": "Bored Ape #8",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/liveBidding/liveBidding10.jpg"
+            }
+        },
+        "volume": "2,70,000",
+        "24h%": {
+            "charge": "195.60%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "85.45%",
+            "status": "+"
+        },
+        "floor_price": "41.50",
+        "owners": "2.4k",
+        "items": "8.5k"
+    },
+    {
+        "id": 10,
+        "product": {
+            "title": "Bored Ape #9",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/liveBidding/liveBidding11.jpg"
+            }
+        },
+        "volume": "1,90,000",
+        "24h%": {
+            "charge": "225.75%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "92.10%",
+            "status": "+"
+        },
+        "floor_price": "37.10",
+        "owners": "1.9k",
+        "items": "6.8k"
+    },
+    {
+        "id": 11,
+        "product": {
+            "title": "Bored Ape #10",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/liveBidding/liveBidding12.jpg"
+            }
+        },
+        "volume": "2,50,000",
+        "24h%": {
+            "charge": "255.90%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "105.30%",
+            "status": "+"
+        },
+        "floor_price": "43.80",
+        "owners": "2.6k",
+        "items": "9.2k"
+    },
+    {
+        "id": 11,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-07.jpg"
+            }
+        },
+        "volume": "11,50,000",
+        "24h%": {
+            "charge": "560.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "33.02",
+        "owners": "3.6k",
+        "items": "230k"
+    },
+    {
+        "id": 12,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-08.jpg"
+            }
+        },
+        "volume": "10,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "22.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "3.2k",
+        "items": "100k"
+    },
+    {
+        "id": 13,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-01.jpg"
+            }
+        },
+        "volume": "9,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "-"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "300.02",
+        "owners": "33k",
+        "items": "50k"
+    },
+    {
+        "id": 14,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-02.jpg"
+            }
+        },
+        "volume": "20,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "2.5k",
+        "items": "30k"
+    },
+    {
+        "id": 15,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-03.jpg"
+            }
+        },
+        "volume": "11,50,000",
+        "24h%": {
+            "charge": "560.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "33.02",
+        "owners": "3.6k",
+        "items": "230k"
+    },
+    {
+        "id": 16,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-04.jpg"
+            }
+        },
+        "volume": "10,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "22.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "3.2k",
+        "items": "100k"
+    },
+    {
+        "id": 17,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-05.jpg"
+            }
+        },
+        "volume": "9,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "-"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "300.02",
+        "owners": "33k",
+        "items": "50k"
+    },
+    {
+        "id": 18,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-08.jpg"
+            }
+        },
+        "volume": "10,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "22.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "3.2k",
+        "items": "100k"
+    },
+    {
+        "id": 19,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-01.jpg"
+            }
+        },
+        "volume": "9,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "-"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "300.02",
+        "owners": "33k",
+        "items": "50k"
+    },
+    {
+        "id": 20,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-02.jpg"
+            }
+        },
+        "volume": "20,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "2.5k",
+        "items": "30k"
+    },
+    {
+        "id": 21,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-03.jpg"
+            }
+        },
+        "volume": "11,50,000",
+        "24h%": {
+            "charge": "560.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "33.02",
+        "owners": "3.6k",
+        "items": "230k"
+    },
+    {
+        "id": 22,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-04.jpg"
+            }
+        },
+        "volume": "10,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "22.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "3.2k",
+        "items": "100k"
+    },
+    {
+        "id": 23,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-05.jpg"
+            }
+        },
+        "volume": "9,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "-"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "300.02",
+        "owners": "33k",
+        "items": "50k"
+    },
+    {
+        "id": 24,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-06.jpg"
+            }
+        },
+        "volume": "20,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "2.5k",
+        "items": "30k"
+    },
+    {
+        "id": 25,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-07.jpg"
+            }
+        },
+        "volume": "11,50,000",
+        "24h%": {
+            "charge": "560.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "33.02",
+        "owners": "3.6k",
+        "items": "230k"
+    },
+    {
+        "id": 26,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-08.jpg"
+            }
+        },
+        "volume": "10,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "22.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "3.2k",
+        "items": "100k"
+    },
+    {
+        "id": 27,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-01.jpg"
+            }
+        },
+        "volume": "9,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "-"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "300.02",
+        "owners": "33k",
+        "items": "50k"
+    },
+    {
+        "id": 28,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-02.jpg"
+            }
+        },
+        "volume": "20,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "2.5k",
+        "items": "30k"
+    },
+    {
+        "id": 29,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-03.jpg"
+            }
+        },
+        "volume": "11,50,000",
+        "24h%": {
+            "charge": "560.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "33.02",
+        "owners": "3.6k",
+        "items": "230k"
+    },
+    {
+        "id": 30,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-04.jpg"
+            }
+        },
+        "volume": "10,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "22.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "3.2k",
+        "items": "100k"
+    },
+    {
+        "id": 31,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-05.jpg"
+            }
+        },
+        "volume": "9,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "-"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "300.02",
+        "owners": "33k",
+        "items": "50k"
+    },
+    {
+        "id": 32,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-04.jpg"
+            }
+        },
+        "volume": "10,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "22.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "3.2k",
+        "items": "100k"
+    },
+    {
+        "id": 33,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-05.jpg"
+            }
+        },
+        "volume": "9,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "-"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "300.02",
+        "owners": "33k",
+        "items": "50k"
+    },
+    {
+        "id": 34,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-06.jpg"
+            }
+        },
+        "volume": "20,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "2.5k",
+        "items": "30k"
+    },
+    {
+        "id": 35,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-07.jpg"
+            }
+        },
+        "volume": "11,50,000",
+        "24h%": {
+            "charge": "560.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "33.02",
+        "owners": "3.6k",
+        "items": "230k"
+    },
+    {
+        "id": 36,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-08.jpg"
+            }
+        },
+        "volume": "10,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "22.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "3.2k",
+        "items": "100k"
+    },
+    {
+        "id": 37,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-01.jpg"
+            }
+        },
+        "volume": "9,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "-"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "300.02",
+        "owners": "33k",
+        "items": "50k"
+    },
+    {
+        "id": 38,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-02.jpg"
+            }
+        },
+        "volume": "20,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "2.5k",
+        "items": "30k"
+    },
+    {
+        "id": 39,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-03.jpg"
+            }
+        },
+        "volume": "11,50,000",
+        "24h%": {
+            "charge": "560.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "33.02",
+        "owners": "3.6k",
+        "items": "230k"
+    },
+    {
+        "id": 40,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-04.jpg"
+            }
+        },
+        "volume": "10,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "22.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "3.2k",
+        "items": "100k"
+    },
+    {
+        "id": 41,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-05.jpg"
+            }
+        },
+        "volume": "9,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "-"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "300.02",
+        "owners": "33k",
+        "items": "50k"
+    },
+    {
+        "id": 42,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-08.jpg"
+            }
+        },
+        "volume": "10,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "22.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "3.2k",
+        "items": "100k"
+    },
+    {
+        "id": 43,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-01.jpg"
+            }
+        },
+        "volume": "9,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "-"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "300.02",
+        "owners": "33k",
+        "items": "50k"
+    },
+    {
+        "id": 44,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-02.jpg"
+            }
+        },
+        "volume": "20,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "2.5k",
+        "items": "30k"
+    },
+    {
+        "id": 45,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-03.jpg"
+            }
+        },
+        "volume": "11,50,000",
+        "24h%": {
+            "charge": "560.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "33.02",
+        "owners": "3.6k",
+        "items": "230k"
+    },
+    {
+        "id": 46,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-04.jpg"
+            }
+        },
+        "volume": "10,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "22.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "3.2k",
+        "items": "100k"
+    },
+    {
+        "id": 47,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-05.jpg"
+            }
+        },
+        "volume": "9,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "-"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "300.02",
+        "owners": "33k",
+        "items": "50k"
+    },
+    {
+        "id": 48,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-06.jpg"
+            }
+        },
+        "volume": "20,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "2.5k",
+        "items": "30k"
+    },
+    {
+        "id": 49,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-07.jpg"
+            }
+        },
+        "volume": "11,50,000",
+        "24h%": {
+            "charge": "560.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "33.02",
+        "owners": "3.6k",
+        "items": "230k"
+    },
+    {
+        "id": 50,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-08.jpg"
+            }
+        },
+        "volume": "10,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "22.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "3.2k",
+        "items": "100k"
+    },
+    {
+        "id": 51,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-01.jpg"
+            }
+        },
+        "volume": "9,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "-"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "300.02",
+        "owners": "33k",
+        "items": "50k"
+    },
+    {
+        "id": 52,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-02.jpg"
+            }
+        },
+        "volume": "20,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "2.5k",
+        "items": "30k"
+    },
+    {
+        "id": 53,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-03.jpg"
+            }
+        },
+        "volume": "11,50,000",
+        "24h%": {
+            "charge": "560.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "33.02",
+        "owners": "3.6k",
+        "items": "230k"
+    },
+    {
+        "id": 54,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-04.jpg"
+            }
+        },
+        "volume": "10,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "+"
+        },
+        "7d%": {
+            "charge": "22.21%",
+            "status": "-"
+        },
+        "floor_price": "33.02",
+        "owners": "3.2k",
+        "items": "100k"
+    },
+    {
+        "id": 55,
+        "product": {
+            "title": "Secure 25",
+            "slug": "/collection",
+            "image": {
+                "src": "/images/portfolio/portfolio-05.jpg"
+            }
+        },
+        "volume": "9,50,000",
+        "24h%": {
+            "charge": "310.63%",
+            "status": "-"
+        },
+        "7d%": {
+            "charge": "62.21%",
+            "status": "+"
+        },
+        "floor_price": "300.02",
+        "owners": "33k",
+        "items": "50k"
+    }
+]

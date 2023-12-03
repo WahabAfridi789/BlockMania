@@ -1,0 +1,108 @@
+{
+    "title": "about",
+    "content": [
+        {
+            "section": "about-section",
+            "section_title": {
+                "title": "Who We Are?"
+            },
+            "image": {
+                "src": "/images/about/about1.jpg"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "title": "Why We Do This",
+                    "description": "NFTs are virtual tokens that represent ownership of something inherently distinct and scarce, whether it be a physical or digital item, such as artwork, a soundtrack, a collectible, an in-game item or real estate. Unlike regular cryptocurrencies like bitcoin or fiat money like the U.S.",
+                    "path": "/blog"
+                },
+                {
+                    "id": 2,
+                    "title": "Helping You <br/> Grow In Every Stage.",
+                    "description": "NFTs are virtual tokens that represent ownership of something inherently distinct and scarce, whether it be a physical or digital item, such as artwork, a soundtrack, a collectible, an in-game item or real estate. Unlike regular cryptocurrencies like bitcoin or fiat money like the U.S."
+                }
+            ]
+        },
+        {
+            "section": "quote-section",
+            "section_title": {
+                "title": "Create, Sell well & Collect your Wonderful NFTs at Block Mania Very Fast"
+            },
+            "texts": [
+                {
+                    "id": 1,
+                    "content": "The NFTs is a one-trick pony that climbed the ladders of success in recent years. The growth NFTs is tremendous, and according to Pymnts.com, the total sales volume of NFTs has nearly crossed $2.5 billion in the last six months of 2021. Surprisingly, the total sales volume of NFTs was $13.7 million in 2020. On comparing both the values,"
+                }
+            ]
+        },
+        {
+            "section": "funfact-section",
+            "section_title": {
+                "title": "Blockmania Statistics"
+            },
+            "funfacts": [
+                {
+                    "id": 1,
+                    "title": "Blockmania All NFT's",
+                    "counter": 2000,
+                    "suffix": "+"
+                },
+                {
+                    "id": 2,
+                    "title": "All Creators",
+                    "counter": 500,
+                    "suffix": "+"
+                },
+                {
+                    "id": 3,
+                    "title": "Blockmania Earnings",
+                    "counter": 700,
+                    "suffix": "M+"
+                },
+                {
+                    "id": 4,
+                    "title": "Collections",
+                    "counter": 900,
+                    "suffix": "+"
+                }
+            ]
+        },
+        {
+            "section": "cta-section",
+            "headings": [
+                {
+                    "id": 1,
+                    "content": "Discover rare digital art <br/> and collect NFTs"
+                }
+            ],
+            "texts": [
+                {
+                    "id": 1,
+                    "content": "The NFTs is a one-trick pony that climbed the recent years. The growth of NFTs is tremendous."
+                }
+            ],
+            "buttons": [
+                {
+                    "id": 1,
+                    "path": "/create",
+                    "content": "Create"
+                },
+                {
+                    "id": 2,
+                    "path": "/contact",
+                    "content": "Contact Us",
+                    "color": "primary-alta"
+                }
+            ],
+            "image": {
+                "src": "/images/about/about2.jpg"
+            }
+        },
+        {
+            "section": "blog-section",
+            "section_title": {
+                "title": "Our Recent Blog"
+            }
+        }
+    ]
+}

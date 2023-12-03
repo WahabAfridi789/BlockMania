@@ -1,0 +1,384 @@
+[
+    {
+        "id": 1,
+        "title": "Maouz",
+        "slug": "/author",
+        "total_item": 27,
+        "image": {
+            "src": "/images/collection/collection_square_1.jpg"
+        },
+        "thumbnails": [
+            {
+                "src": "/images/collection/collection-sm1.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm2.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm3.jpg"
+            }
+        ],
+        "profile_image": {
+            "src": "/images/client/avatar_1.jpg"
+        }
+    },
+
+    {
+        "id": 2,
+        "title": "Abdul Wahab",
+        "slug": "/collection",
+        "total_item": 20,
+        "image": {
+            "src": "/images/collection/collection_square_2.jpg"
+        },
+        "thumbnails": [
+            {
+                "src": "/images/collection/collection-sm4.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm5.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm6.jpg"
+            }
+        ],
+        "profile_image": {
+            "src": "/images/client/avatar_3.jpg"
+        }
+    },
+
+    {
+        "id": 3,
+        "title": "Arbab",
+        "slug": "/collection",
+        "total_item": 15,
+        "image": {
+            "src": "/images/collection/collection_square_3.jpg"
+        },
+        "thumbnails": [
+            {
+                "src": "/images/collection/collection-sm7.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm8.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm9.jpg"
+            }
+        ],
+        "profile_image": {
+            "src": "/images/client/avatar_4.jpg"
+        }
+    },
+
+    {
+        "id": 4,
+        "title": "Afnan",
+        "slug": "/collection",
+        "total_item": 27,
+        "image": {
+            "src": "/images/collection/collection_square_4.jpg"
+        },
+        "thumbnails": [
+            {
+                "src": "/images/collection/collection-sm10.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm4.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm7.jpg"
+            }
+        ],
+        "profile_image": {
+            "src": "/images/client/avatar_5.jpg"
+        }
+    },
+
+    {
+        "id": 5,
+        "title": "Tanveer",
+        "slug": "/collection",
+        "total_item": 35,
+        "image": {
+            "src": "/images/collection/collection_square_11.jpg"
+        },
+        "thumbnails": [
+            {
+                "src": "/images/collection/collection-sm3.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm5.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm12.jpg"
+            }
+        ],
+        "profile_image": {
+            "src": "/images/collection/client1.png"
+        }
+    },
+
+    {
+        "id": 6,
+        "title": "Hafeez",
+        "slug": "/collection",
+        "total_item": 82,
+        "image": {
+            "src": "/images/collection/collection_square_2.jpg"
+        },
+        "thumbnails": [
+            {
+                "src": "/images/collection/collection-sm4.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm5.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm6.jpg"
+            }
+        ],
+        "profile_image": {
+            "src": "/images/collection/client(2).png"
+        }
+    },
+
+    {
+        "id": 7,
+        "title": "Amjad",
+        "slug": "/collection",
+        "total_item": 10,
+        "image": {
+            "src": "/images/collection/collection_square_7.jpg"
+        },
+        "thumbnails": [
+            {
+                "src": "/images/collection/collection-sm12.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm1.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm9.jpg"
+            }
+        ],
+        "profile_image": {
+            "src": "/images/collection/client(3).png"
+        }
+    },
+
+    {
+        "id": 8,
+        "title": "Abubakar",
+        "slug": "/collection",
+        "total_item": 82,
+        "image": {
+            "src": "/images/collection/collection_square_8.jpg"
+        },
+        "thumbnails": [
+            {
+                "src": "/images/collection/collection-sm10.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm11.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm12.jpg"
+            }
+        ],
+        "profile_image": {
+            "src": "/images/collection/client(4).png"
+        }
+    },
+
+    {
+        "id": 9,
+        "title": "Umar",
+        "slug": "/collection",
+        "total_item": 5,
+        "image": {
+            "src": "/images/collection/collection_square_9.jpg"
+        },
+        "thumbnails": [
+            {
+                "src": "/images/collection/collection-sm2.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm4.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm7.jpg"
+            }
+        ],
+        "profile_image": {
+            "src": "/images/collection/client(5).png"
+        }
+    },
+
+    {
+        "id": 10,
+        "title": "Musa",
+        "slug": "/collection",
+        "total_item": 56,
+        "image": {
+            "src": "/images/collection/collection_square_10.jpg"
+        },
+        "thumbnails": [
+            {
+                "src": "/images/collection/collection-sm1.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm5.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm7.jpg"
+            }
+        ],
+        "profile_image": {
+            "src": "/images/collection/client(6).png"
+        }
+    },
+
+    {
+        "id": 11,
+        "title": "Abdullah",
+        "slug": "/collection",
+        "total_item": 56,
+        "image": {
+            "src": "/images/collection/collection_square_11.jpg"
+        },
+        "thumbnails": [
+            {
+                "src": "/images/collection/collection-sm3.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm5.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm6.jpg"
+            }
+        ],
+        "profile_image": {
+            "src": "/images/collection/client(2).png"
+        }
+    },
+
+    {
+        "id": 12,
+        "title": "Zahoor",
+        "slug": "/collection",
+        "total_item": 40,
+        "image": {
+            "src": "/images/collection/collection_square_12.jpg"
+        },
+        "thumbnails": [
+            {
+                "src": "/images/collection/collection-sm4.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm8.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm10.jpg"
+            }
+        ],
+        "profile_image": {
+            "src": "/images/collection/client(3).png"
+        }
+    },
+
+    {
+        "id": 13,
+        "title": "Adeel",
+        "slug": "/collection",
+        "total_item": 35,
+        "image": {
+            "src": "/images/collection/collection_square_5.jpg"
+        },
+        "thumbnails": [
+            {
+                "src": "/images/collection/collection-sm8.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm9.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm6.jpg"
+            }
+        ],
+        "profile_image": {
+            "src": "/images/collection/client(5).png"
+        }
+    },
+
+    {
+        "id": 13,
+        "title": "Adeel",
+        "slug": "/collection",
+        "total_item": 35,
+        "image": {
+            "src": "/images/collection/collection_square_3.jpg"
+        },
+        "thumbnails": [
+            {
+                "src": "/images/collection/collection-sm2.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm5.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm6.jpg"
+            }
+        ],
+        "profile_image": {
+            "src": "/images/collection/client(6).png"
+        }
+    },
+
+    {
+        "id": 13,
+        "title": "Adeel",
+        "slug": "/collection",
+        "total_item": 35,
+        "image": {
+            "src": "/images/collection/collection_square_7.jpg"
+        },
+        "thumbnails": [
+            {
+                "src": "/images/collection/collection-sm7.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm8.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm9.jpg"
+            }
+        ],
+        "profile_image": {
+            "src": "/images/collection/client(2).png"
+        }
+    },
+    {
+        "id": 13,
+        "title": "Fatima",
+        "slug": "/collection",
+        "total_item": 35,
+        "image": {
+            "src": "/images/collection/collection_square_12.jpg"
+        },
+        "thumbnails": [
+            {
+                "src": "/images/collection/collection-sm10.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm11.jpg"
+            },
+            {
+                "src": "/images/collection/collection-sm12.jpg"
+            }
+        ],
+        "profile_image": {
+            "src": "/images/collection/client(5).png"
+        }
+    }
+]

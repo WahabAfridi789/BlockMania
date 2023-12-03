@@ -1,0 +1,353 @@
+[
+    {
+        "id": 1,
+        "name": "Shayan",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/shayan.png"
+        },
+        "total_sale": 2500000,
+        "top_since": "7 days",
+        "isVarified": false
+    },
+    {
+        "id": 2,
+        "name": "Abdullah",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/abdullah.png"
+        },
+        "total_sale": 2300000,
+        "top_since": "1 day",
+        "isVarified": false
+    },
+    {
+        "id": 3,
+        "name": "Abdul Wahab",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/wahab1.jpg"
+        },
+        "total_sale": 2700000,
+        "top_since": "30 days",
+        "isVarified": true
+    },
+    {
+        "id": 4,
+        "name": "Aziz",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/azeez.png"
+        },
+        "total_sale": 2400000,
+        "top_since": "7 days",
+        "isVarified": true
+    },
+    {
+        "id": 5,
+        "name": "Shoaib",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/robert.png"
+        },
+        "total_sale": 2200000,
+        "top_since": "15 days",
+        "isVarified": false
+    },
+    {
+        "id": 6,
+        "name": "Ali Khan",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/ali.png"
+        },
+        "total_sale": 2900000,
+        "top_since": "7 days",
+        "isVarified": false
+    },
+    {
+        "id": 7,
+        "name": "Ahmad",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/wahab.png"
+        },
+        "total_sale": 3300000,
+        "top_since": "30 days",
+        "isVarified": true
+    },
+    {
+        "id": 8,
+        "name": "Fatima",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/4.png"
+        },
+        "total_sale": 1300000,
+        "top_since": "7 days",
+        "isVarified": false
+    },
+    {
+        "id": 9,
+        "name": "Ayesha",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/3.png"
+        },
+        "total_sale": 5300000,
+        "top_since": "30 days",
+        "isVarified": false
+    },
+    {
+        "id": 10,
+        "name": "Sikandare",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/1.png"
+        },
+        "total_sale": 230000,
+        "top_since": "7 days",
+        "isVarified": true
+    },
+    {
+        "id": 11,
+        "name": "Salar",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/2.png"
+        },
+        "total_sale": 2320000,
+        "top_since": "7 days",
+        "isVarified": false
+    },
+    {
+        "id": 12,
+        "name": "Rehman",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/5.png"
+        },
+        "total_sale": 2300300,
+        "top_since": "30 days",
+        "isVarified": true
+    },
+    {
+        "id": 13,
+        "name": "Asfandayr",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/2.png"
+        },
+        "total_sale": 2304400,
+        "top_since": "7 days",
+        "isVarified": false
+    },
+    {
+        "id": 14,
+        "name": " Maouz",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/1.png"
+        },
+        "total_sale": 2304400,
+        "top_since": "30 days",
+        "isVarified": false
+    },
+    {
+        "id": 15,
+        "name": "Umar",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/5.png"
+        },
+        "total_sale": 2304400,
+        "top_since": "1 day",
+        "isVarified": true
+    },
+    {
+        "id": 16,
+        "name": "Atif",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/2.png"
+        },
+        "total_sale": 2304400,
+        "top_since": "1 day",
+        "isVarified": false
+    },
+    {
+        "id": 1,
+        "name": "Shayan",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/shayan.png"
+        },
+        "total_sale": 2500000,
+        "top_since": "7 days",
+        "isVarified": false
+    },
+    {
+        "id": 2,
+        "name": "Abdullah",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/abdullah.png"
+        },
+        "total_sale": 2300000,
+        "top_since": "1 day",
+        "isVarified": false
+    },
+    {
+        "id": 3,
+        "name": "Abdul Wahab",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/wahab1.jpg"
+        },
+        "total_sale": 2700000,
+        "top_since": "30 days",
+        "isVarified": true
+    },
+    {
+        "id": 4,
+        "name": "Aziz",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/azeez.png"
+        },
+        "total_sale": 2400000,
+        "top_since": "7 days",
+        "isVarified": true
+    },
+    {
+        "id": 5,
+        "name": "Shoaib",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/robert.png"
+        },
+        "total_sale": 2200000,
+        "top_since": "15 days",
+        "isVarified": false
+    },
+    {
+        "id": 6,
+        "name": "Ali Khan",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/ali.png"
+        },
+        "total_sale": 2900000,
+        "top_since": "7 days",
+        "isVarified": false
+    },
+    {
+        "id": 7,
+        "name": "Ahmad",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/wahab.png"
+        },
+        "total_sale": 3300000,
+        "top_since": "30 days",
+        "isVarified": true
+    },
+    {
+        "id": 8,
+        "name": "Fatima",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/4.png"
+        },
+        "total_sale": 1300000,
+        "top_since": "7 days",
+        "isVarified": false
+    },
+    {
+        "id": 9,
+        "name": "Ayesha",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/3.png"
+        },
+        "total_sale": 5300000,
+        "top_since": "30 days",
+        "isVarified": false
+    },
+    {
+        "id": 10,
+        "name": "Sikandare",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/1.png"
+        },
+        "total_sale": 230000,
+        "top_since": "7 days",
+        "isVarified": true
+    },
+    {
+        "id": 11,
+        "name": "Salar",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/2.png"
+        },
+        "total_sale": 2320000,
+        "top_since": "7 days",
+        "isVarified": false
+    },
+    {
+        "id": 12,
+        "name": "Rehman",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/5.png"
+        },
+        "total_sale": 2300300,
+        "top_since": "30 days",
+        "isVarified": true
+    },
+    {
+        "id": 13,
+        "name": "Asfandayr",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/2.png"
+        },
+        "total_sale": 2304400,
+        "top_since": "7 days",
+        "isVarified": false
+    },
+    {
+        "id": 14,
+        "name": " Maouz",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/1.png"
+        },
+        "total_sale": 2304400,
+        "top_since": "30 days",
+        "isVarified": false
+    },
+    {
+        "id": 15,
+        "name": "Umar",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/5.png"
+        },
+        "total_sale": 2304400,
+        "top_since": "1 day",
+        "isVarified": true
+    },
+    {
+        "id": 16,
+        "name": "Atif",
+        "slug": "/author",
+        "image": {
+            "src": "/images/author/2.png"
+        },
+        "total_sale": 2304400,
+        "top_since": "1 day",
+        "isVarified": false
+    }]

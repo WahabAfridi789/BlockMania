@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "text": "Home",
+        "path": "/"
+    },
+
+    {
+        "id": 3,
+        "text": "Explore",
+        "path": "#!",
+        "submenu": [
+            {
+                "id": 410,
+                "text": "Create NFT",
+                "path": "/create",
+                "icon": "feather-file-plus"
+            },
+           
+           
+            {
+                "id": 432,
+                "text": "NFT Ranking",
+                "path": "/ranking",
+                "icon": "feather-trending-up"
+            },
+            {
+                "id": 433,
+                "text": "Our Best Creators",
+                "path": "/creator",
+                "icon": "feather-book-open"
+            }
+        ]
+    },
+
+    {
+        "id": 2,
+        "text": "About",
+        "path": "/about",
+        "submenu": [
+            {
+                "id": 441,
+                "text": "About Us",
+                "path": "/about",
+                "icon": "feather-award"
+            },
+
+            {
+                "id": 443,
+                "text": "Support/FAQ",
+                "path": "/support",
+                "icon": "feather-help-circle"
+            },
+            {
+                "id": 425,
+                "text": "Privacy Policy",
+                "path": "/privacy-policy",
+                "icon": "feather-file-text"
+            },
+            {
+                "id": 444,
+                "text": "Terms & Condition",
+                "path": "/terms-condition",
+                "icon": "feather-list"
+            }
+        ]
+    },
+
+    {
+        "id": 6,
+        "text": "Contact",
+        "path": "/contact"
+    }
+   
+]
+
+
+

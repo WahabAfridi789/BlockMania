@@ -1,0 +1,95 @@
+{
+    "id": "footer-data-01",
+    "logo-widget": {
+        "logo": [
+            {
+                "src": "/images/logo/logo-white.png",
+                "alt": "logo"
+            },
+            {
+                "src": "/images/logo/logo-dark.png",
+                "alt": "logo"
+            }
+        ],
+        "text": "Created with the collaboration of over 60 of the world's best Blockmania Artists."
+    },
+
+    "campaign-footer": {
+        "title": "Campaign",
+        "menu": [
+            {
+                "id": 1,
+                "text": "Create Campaign",
+                "path": "#"
+            },
+            {
+                "id": 2,
+                "text": "Back Campaigns",
+                "path": "#"
+            },
+            {
+                "id": 3,
+                "text": "Browse Campaigns",
+                "path": "#"
+            }
+        ]
+    },
+
+    "NFT-footer": {
+        "title": "Digital NFTs",
+        "menu": [
+            {
+                "id": 1,
+                "text": "Explore Marketplace",
+                "path": "/explore-01"
+            },
+            {
+                "id": 2,
+                "text": "Create NFT",
+                "path": "/create"
+            },
+            {
+                "id": 3,
+                "text": "Collections",
+                "path": "/collection"
+            }
+        ]
+    },
+
+    "contact-footer": {
+        "title": "Contact Us",
+        "menu": [
+            {
+                "id": 1,
+                "text": "Email: kwahab214@gmail.com",
+                "path": "#"
+            },
+            {
+                "id": 2,
+                "text": "Phone: +92 304 00030331",
+                "path": "#"
+            },
+            {
+                "id": 3,
+                "text": "Address: Park Road, Islamabad, Pakistan",
+                "path": "#"
+            }
+        ]
+    },
+
+    "footer-link-widget": {
+        "menu": [
+            {
+                "id": 1,
+                "text": "Terms and Conditions",
+                "path": "/terms-condition"
+            },
+            {
+                "id": 2,
+                "text": "Privacy Policy",
+                "path": "/privacy-policy"
+            }
+        ]
+    },
+    "copyright_text": "©2023 Blockmania, Inc. All rights reserved"
+}
