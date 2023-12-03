@@ -17,8 +17,7 @@ import Button from "@ui/button";
 import { useOffcanvas, useSticky, useFlyoutSearch } from "@hooks";
 import headerData from "../../data/general/header.json";
 import menuData from "../../data/general/menu.json";
-
-import { useCartContext } from '../../cartContext/CartContext';
+import { useCartContext } from "../../cartContext/CartContext";
 
 import { ConnectWallet } from "@thirdweb-dev/react";
 const Header = ({ className }) => {
@@ -28,8 +27,6 @@ const Header = ({ className }) => {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [ethBalance, setEthBalance] = useState("");
     const { cartItems } = useCartContext();
-
-    
 
     useEffect(() => {
         const user = localStorage.getItem("user");
@@ -53,8 +50,6 @@ const Header = ({ className }) => {
     };
 
     const onConnect = async () => {
-
-     
         try {
             const currentProvider = detectCurrentProvider();
             if (currentProvider) {
@@ -92,6 +87,21 @@ const Header = ({ className }) => {
         } catch (err) {
             console.log(err);
         }
+    };
+
+    const onLogin = async () => {
+        const getUserByWallet = await axios.get(
+            `http://localhost:5000/user/getUserByWallet/${walletAddress}`
+        );
+        const userData = getUserByWallet.data.user;
+
+        // Store user data in local storage
+        localStorage.setItem("user", JSON.stringify(userData));
+
+        console.log("getUserByWallet", userData);
+
+        setEthBalance(formattedBalance);
+        setIsAuthenticated(true);
     };
 
     const onDisconnect = () => {
@@ -151,9 +161,16 @@ const Header = ({ className }) => {
                                             onClick={onConnect}
                                         >
                                             Connect
-                                            {/* <ConnectWallet /> */}
-
                                         </Button>
+
+                                        {/* <ConnectWallet
+                                            modalTitle={
+                                                "Connect with Blockmania"
+                                            }
+                                            auth={{ loginOptional: false }}
+                                            modalTitleIconUrl={""}
+                                            className="w-10"
+                                        /> */}
                                     </div>
                                 </div>
                             )}

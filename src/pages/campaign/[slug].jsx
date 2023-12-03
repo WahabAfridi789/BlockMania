@@ -36,27 +36,4 @@ export async function getStaticPaths() {
     };
 }
 
-export async function getStaticProps({ params }) {
-    const product = productData.find(({ slug }) => slug === params.slug);
-    const { categories } = product;
-    const recentViewProducts = shuffleArray(productData).slice(0, 5);
-    const relatedProducts = productData
-        .filter((prod) => prod.categories?.some((r) => categories?.includes(r)))
-        .slice(0, 5);
-    return {
-        props: {
-            className: "template-color-1",
-            product,
-            recentViewProducts,
-            relatedProducts,
-        }, // will be passed to the page component as props
-    };
-}
-
-ProductDetails.propTypes = {
-    product: PropTypes.shape({}),
-    recentViewProducts: PropTypes.arrayOf(PropTypes.shape({})),
-    relatedProducts: PropTypes.arrayOf(PropTypes.shape({})),
-};
-
 export default CampaignDetail;

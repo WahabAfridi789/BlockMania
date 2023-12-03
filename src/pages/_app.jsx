@@ -9,11 +9,8 @@ import "../assets/css/modal-video.css";
 import "react-toastify/dist/ReactToastify.css";
 import "../assets/scss/style.scss";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
-import {StateContextProvider} from "../context";
-import { CartContextProvider } from '../cartContext/CartContext';
-
-
-
+import { StateContextProvider } from "../context";
+import { CartContextProvider } from "../cartContext/CartContext";
 
 const activeChain = "mumbai";
 
@@ -36,11 +33,10 @@ const MyApp = ({ Component, pageProps }) => {
                 clientId="9ae075ddf0cff1be2c1727bf42618cbd"
             >
                 <StateContextProvider>
-                <CartContextProvider>
-                <Component {...pageProps} />
-                </CartContextProvider>
+                    <CartContextProvider>
+                        <Component {...pageProps} />
+                    </CartContextProvider>
                 </StateContextProvider>
-                
             </ThirdwebProvider>
         </ThemeProvider>
     );

@@ -25,6 +25,7 @@ module.exports = {
             "gateway.p",
             "images.pexels.com",
             "res.cloudinary.com",
+            "*",
         ],
         formats: ["image/webp"],
     },

@@ -88,7 +88,6 @@ const [error,setError] = useState();
   const donate = async (pId, amount) => {
     console.log("donate", pId, amount);
     const data = await contract.call('donateToCampaign', [pId], { value: ethers.utils.parseEther(amount)});
-
     return data;
   }
 

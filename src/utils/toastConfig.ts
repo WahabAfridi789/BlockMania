@@ -1,4 +1,6 @@
-const toastStyle = {
+import { CSSProperties } from 'react';
+
+const toastStyle: CSSProperties = {
   borderRadius: "4px",
   background: "#222528",
   color: "#fff",

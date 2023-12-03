@@ -15,7 +15,7 @@ import ProductCollection from "@components/product-details/collection";
 import { ImageType } from "@utils/types";
 
 
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Container from "../../../Container/Container";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { NFT, ThirdwebSDK } from "@thirdweb-dev/sdk";
@@ -171,8 +171,8 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
       <Header />
       <main id="main-content">
         <Breadcrumb pageTitle="Token Details"
-         />
-      <Toaster position="bottom-center" reverseOrder={false} />
+        />
+        <Toaster position="bottom-center" reverseOrder={false} />
 
 
 
@@ -394,39 +394,42 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
 
 
 
-          <div className="container rn-section-gapTop">
-            <div className="row g-5">
-              <div className="col-lg-7 col-md-12 col-sm-12">
-                <Sticky>
-                  <NewGalleryTab image={nft.metadata.image} />
-                </Sticky>
-              </div>
-              <div className="col-lg-5 col-md-12 col-sm-12 mt_md--50 mt_sm--60">
-                <div className="rn-pd-content-area">
+        <div className="container rn-section-gapTop">
+          <div className="row g-5">
+            <div className="col-lg-7 col-md-12 col-sm-12">
+              <Sticky>
+                <NewGalleryTab image={nft.metadata.image} />
+              </Sticky>
+            </div>
+            <div className="col-lg-5 col-md-12 col-sm-12 mt_md--50 mt_sm--60">
+              <div className="rn-pd-content-area">
 
 
-                  <div className="catagory-collection">
-                    {/* <ProductCategory owner={product.owner} /> */}
-                    <ProductCollection
-                      metaDataName={metaDataName} />
-                  </div>
-                  <ProductTitle
-                    title={
-                      nft.metadata.name.charAt(0).toUpperCase() +
-                      nft.metadata.name.slice(1)
-                    }
-                  />
+                <div className="catagory-collection">
+                  {/* <ProductCategory owner={product.owner} /> */}
+                  <ProductCollection
+                    metaDataName={metaDataName} />
+                </div>
+                <ProductTitle
+                  // title={
+                  //   nft.metadata.name.charAt(0).toUpperCase() +
+                  //   nft.metadata.name.slice(1)
+                  // }
+
+                  title={
+                    typeof nft.metadata.name === 'string'
+                      ? nft.metadata.name.charAt(0).toUpperCase() + nft.metadata.name.slice(1)
+                      : ''
+                  }
+                />
 
 
-                  <div className="product-details-content">
-                 
+                <div className="product-details-content">
 
-                  {/* <Link
-                    href={`/author/${nft.owner}`}
-                    className={styles.nftOwnerContainer}
-                  > */}
-                    {/* Random linear gradient circle shape */}
-                    <div className={styles.nftOwnerContainer}>
+
+
+                  {/* Random linear gradient circle shape */}
+                  <div className={styles.nftOwnerContainer}>
                     <div
                       className={styles.nftOwnerImage}
                       style={{
@@ -439,43 +442,43 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                         {nft.owner.slice(0, 8)}...{nft.owner.slice(-4)}
                       </p>
                     </div>
-                    </div>
-                  {/* </Link> */}
                   </div>
-<br />
+
+                </div>
+                <br />
 
 
-                  <span className="bid ">
-                    Price{" "}
-                    <h4 className="price">
+                <span className="bid ">
+                  Price{" "}
+                  <h4 className="price">
 
                     {loadingContract || loadingDirect || loadingAuction ? (
-                    <Skeleton width="120" height="24" />
-                  ) : (
-                    <>
-                      {directListing && directListing[0] ? (
-                        <>
-                          {directListing[0]?.currencyValuePerToken.displayValue}
-                          {" " + directListing[0]?.currencyValuePerToken.symbol}
-                        </>
-                      ) : auctionListing && auctionListing[0] ? (
-                        <>
-                          {auctionListing[0]?.buyoutCurrencyValue.displayValue}
-                          {" " + auctionListing[0]?.buyoutCurrencyValue.symbol}
-                        </>
-                      ) : (
-                        "Not for sale"
-                      )}
-                    </>
-                  )}
-                      
-                    </h4>
-                  </span>
-                  {/* <Button color="primary-alta" path="#">
+                      <Skeleton width="120" height="24" />
+                    ) : (
+                      <>
+                        {directListing && directListing[0] ? (
+                          <>
+                            {directListing[0]?.currencyValuePerToken.displayValue}
+                            {" " + directListing[0]?.currencyValuePerToken.symbol}
+                          </>
+                        ) : auctionListing && auctionListing[0] ? (
+                          <>
+                            {auctionListing[0]?.buyoutCurrencyValue.displayValue}
+                            {" " + auctionListing[0]?.buyoutCurrencyValue.symbol}
+                          </>
+                        ) : (
+                          "Not for sale"
+                        )}
+                      </>
+                    )}
+
+                  </h4>
+                </span>
+                {/* <Button color="primary-alta" path="#">
                             Unlockable content included
                         </Button> */}
-                  <div className="rn-bid-details">
-                    {/* <BidTab
+                <div className="rn-bid-details">
+                  {/* <BidTab
                                 bids={product?.bids}
                                 owner={product.owner}
                                 properties={product?.properties}
@@ -490,7 +493,7 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
 
 
 
-                  </div>
+                </div>
 
                 <div>
                   {loadingAuction ? (
@@ -548,6 +551,8 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                     </div>
 
                     <input
+                      title="Enter bid amount"
+
                       className={styles.input}
                       defaultValue={
                         auctionListing?.[0]?.minimumBidCurrencyValue
@@ -586,13 +591,13 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                 )}
 
 
-                </div>
+              </div>
 
               <div className={styles.descriptionContainer}>
                 <h3 className={styles.descriptionTitle}>Description</h3>
                 <p className={styles.description}>{nft.metadata.description}</p>
 
-              
+
 
                 <div className={styles.traitsContainer}>
                   {/* {Object.entries(nft?.metadata?.attributes || {}).map(
@@ -605,7 +610,7 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                       </div>
                     )
                   )} */}
-                  
+
                   {winningBid && (
                     <div>
                       <h3>Winning Bid</h3>
@@ -668,10 +673,10 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                   ))}
                 </div>
               </div>
-              </div>
             </div>
           </div>
-  
+        </div>
+
       </main>
       <Footer />
     </Wrapper>
@@ -680,7 +685,7 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const tokenId = context.params?.tokenId as string;
-  
+
 
   const sdk = new ThirdwebSDK(NETWORK, {
     secretKey: process.env.TW_SECRET_KEY,
@@ -694,7 +699,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   try {
     contractMetadata = await contract.metadata.get();
-  } catch (e) {}
+  } catch (e) { }
 
   return {
     props: {

@@ -51,6 +51,7 @@
         "remark-html": "^15.0.1",
         "sal.js": "^0.8.5",
         "sass": "^1.45.0",
+        "sharp": "^0.33.0",
         "web3": "^1.8.1"
     },
     "devDependencies": {

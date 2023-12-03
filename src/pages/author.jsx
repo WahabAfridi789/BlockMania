@@ -51,6 +51,8 @@ const Author = () => {
  const [tab, setTab] = useState("nfts");
 
  const address = useAddress();
+ console.log(address
+    )
 
  const [selectedNft, setSelectedNft] = useState();
   const { contract: nftCollection } = useContract(NFT_COLLECTION_ADDRESS);
@@ -77,7 +79,7 @@ const Author = () => {
 
 
 
-  console.log(ownedNfts);
+  console.log("Owned NFTS",ownedNfts);
 
   return (
       <Wrapper>

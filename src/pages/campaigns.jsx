@@ -8,10 +8,6 @@ import RecentCampaigns from "../campaignsContainers/recent-campaigns";
 
 import { Sidebar, Navbar } from "../components/campaigns";
 
-import CampaignDetails from "./campaignDetails";
-import CreateCampaign from "./CreateCampaignnnn";
-import campaignHome from "./allCampaigns";
-import Profile from "./profile";
 import ExploreCampaigns from "./exploreCampaigns";
 
 // import { CampaignDetails, CreateCampaign, campaignHome, Profile } from './pages/campaignPagesExport.js';

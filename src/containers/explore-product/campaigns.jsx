@@ -62,8 +62,8 @@ const ExploreCampaignArea = ({ className, space, data }) => {
         if (contract) fetchCampaigns();
     }, [contract]);
 
-    console.log(campaigns);
-    console.log(userCampaigns);
+    console.log("All Campaigns",campaigns);
+    console.log("USER Campaigns",userCampaigns);
 
     if (isLoading) return;
     <div className="flex justify-center items-center h-screen">
