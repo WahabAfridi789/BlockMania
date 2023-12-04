@@ -62,8 +62,8 @@ const ExploreCampaignArea = ({ className, space, data }) => {
         if (contract) fetchCampaigns();
     }, [contract]);
 
-    console.log("All Campaigns",campaigns);
-    console.log("USER Campaigns",userCampaigns);
+    console.log("All Campaigns", campaigns);
+    console.log("USER Campaigns", userCampaigns);
 
     if (isLoading) return;
     <div className="flex justify-center items-center h-screen">
@@ -113,7 +113,6 @@ const ExploreCampaignArea = ({ className, space, data }) => {
                                             >
                                                 All Campaigns
                                             </Nav.Link>
-                                           
                                         </Nav>
                                     </nav>
                                 </div>
@@ -138,8 +137,6 @@ const ExploreCampaignArea = ({ className, space, data }) => {
                                     </div>
                                 ))}
                             </TabPane>
-
-
                         </TabContent>
                     </div>
                 </TabContainer>

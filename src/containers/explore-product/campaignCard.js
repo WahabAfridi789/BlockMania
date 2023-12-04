@@ -27,14 +27,14 @@
 //   pathname: '/campaignDetail',
 //   query: { campaignData: JSON.stringify(campaign) }
 // }}>
-  
+
 //     <img
 //       src={campaign.image}
 //       alt="campaign"
 //       className="card-img-top"
 //       style={{ height: '200px', objectFit: 'cover' }}
 //     />
-  
+
 // </Link>
 //       <div className="card-body bg-dark bg-gradient">
 //         <h5 className="card-title">
@@ -61,6 +61,7 @@ import Link from "next/link";
 
 const CampaignCard = (data) => {
     const { product } = data;
+    console.log("product", product);
 
     const campaign = {
         title: product.title,
@@ -118,14 +119,14 @@ const CampaignCard = (data) => {
                 </p>
             </div>
             <div className="card-footer d-flex justify-content-between bg-dark bg-gradient">
-                   <Link
-                href={{
-                    pathname: "/campaignDetail",
-                    query: { campaignData: JSON.stringify(campaign) },
-                }}
-            >
-                <button className="btn btn-success">Donate</button>
-            </Link>
+                <Link
+                    href={{
+                        pathname: "/campaignDetail",
+                        query: { campaignData: JSON.stringify(campaign) },
+                    }}
+                >
+                    <button className="btn btn-success">Donate</button>
+                </Link>
                 <Link
                     href={{
                         pathname: "/campaignDetail",

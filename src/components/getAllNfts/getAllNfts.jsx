@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import {
     NFT_COLLECTION_ADDRESS,
     MARKETPLACE_ADDRESS,
@@ -11,11 +11,21 @@ import {
     useEnglishAuctions,
 } from "@thirdweb-dev/react";
 
+
 import NftCard from "./nftcard";
+
+import {useStateContext} from "../../context";
 
 const GetDirectListings = () => {
     const { contract } = useContract(NFT_COLLECTION_ADDRESS);
     const { data: nftData, isLoading: nftIsLoading } = useNFTs(contract);
+    const [loadingDirect, setLoadingDirect] = React.useState(false);
+    const [loadingAuction, setLoadingAuction] = React.useState(false);
+
+    const {       allCollectionNfts,
+                isCollectionLoading} = useStateContext();
+
+
 
     const { contract: marketplace, isLoading: loadingContract } = useContract(
         MARKETPLACE_ADDRESS,
@@ -34,6 +44,7 @@ const GetDirectListings = () => {
         error: errorDirectListingsCount,
     } = useDirectListingsCount(marketplace);
 
+ 
     const {
         data: englishAuctions,
         isLoading: loadingEnglishAuctions,
@@ -41,6 +52,13 @@ const GetDirectListings = () => {
     } = useEnglishAuctions(marketplace, { start: 0, count: 100 });
 
     console.log("nftData", nftData);
+
+ 
+
+ 
+
+      
+
 
     return (
         <div className="container mt-4">
@@ -58,7 +76,9 @@ const GetDirectListings = () => {
                                 key={index}
                                 className="col-sm-12 col-md-6 col-lg-6 col-xl-4  mb-5"
                             >
-                                <NftCard nftData={...nft} />
+                                <NftCard nftData={...nft} 
+                                allCollectionNfts={allCollectionNfts}
+                                 />
                             </div>
                         ))}
                     </>

@@ -5,13 +5,13 @@ import Footer from "@layout/footer";
 import { normalizedData } from "@utils/methods";
 import HeroArea from "../campaignsContainers/hero";
 import RecentCampaigns from "../campaignsContainers/recent-campaigns";
+import Breadcrumb from "@components/breadcrumb";
 
 import { Sidebar, Navbar } from "../components/campaigns";
 
 import ExploreCampaigns from "./exploreCampaigns";
 
 // import { CampaignDetails, CreateCampaign, campaignHome, Profile } from './pages/campaignPagesExport.js';
-
 
 import productData from "../data/products.json";
 
@@ -27,17 +27,19 @@ export async function getStaticProps() {
 
 const Home = () => {
     const content = normalizedData(homepageData?.content || []);
- 
+
     return (
         <Wrapper>
             <SEO pageTitle="Marketplace" />
-            <Header />            
-          
+            <Header />
+            <Breadcrumb
+                pageTitle="Explore Campaigns"
+                currentPage="Explore Campaigns"
+            />
             <main id="main-content">
                 <HeroArea data={content["hero-section"]} />
 
                 <ExploreCampaigns />
-        
 
                 {/* <CampaignDetails /> */}
             </main>

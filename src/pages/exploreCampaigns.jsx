@@ -6,45 +6,31 @@ import Breadcrumb from "@components/breadcrumb";
 import ExploreCampaignArea from "@containers/explore-product/campaigns";
 import { useState, useEffect } from "react";
 
-
-
 // Demo data
 import productData from "../data/campaigns.json";
-
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
 }
 
 const Home02 = () => {
+    return (
+        <Wrapper>
+            <SEO pageTitle="Explore Campaigns" />
 
- 
-  return (
-    <Wrapper>
-      <SEO pageTitle="Explore Campaigns" />
-      <Header />
-
-      <main id="main-content">
-        <Breadcrumb
-          pageTitle="Explore Campaigns"
-          currentPage="Explore Campaigns"
-        />
-
-
-        
-          <ExploreCampaignArea
-            data={{
-              section_title: {
-                title: "Explore Campaigns",
-              },
-              products: productData,
-            }}
-            
-          />
-      </main>
-      <Footer />
-    </Wrapper>
-  );
+            <main id="main-content">
+                <ExploreCampaignArea
+                    data={{
+                        section_title: {
+                            title: "Explore Campaigns",
+                        },
+                        products: productData,
+                    }}
+                />
+            </main>
+            <Footer />
+        </Wrapper>
+    );
 };
 
 export default Home02;

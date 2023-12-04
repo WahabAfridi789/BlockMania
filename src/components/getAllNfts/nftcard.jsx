@@ -6,20 +6,19 @@ import Link from "next/link";
 import IsNftForSale from "../isNftForSale/isNftForSale";
 const Web3 = require("web3");
 
-const NFTCard = ({ nftData }) => {
-    console.log("NFTCARD", nftData);
+const NFTCard = ({ nftData, allCollectionNfts }) => {
     const web3 = new Web3();
     let price = 0;
     let isAuction = false;
     let isDirect = false;
 
-    const { available, saleType } = IsNftForSale(nftData);
-    console.log("available", available);
-    console.log("saleType", saleType);
+    const { available, saleType, bid, pricePerToke } = IsNftForSale(nftData);
+
+    console.log("NFTCARD", nftData);
+    console.log("ALL NFTS", allCollectionNfts);
 
     const metadata = nftData?.metadata || {}; // Access metadata directly
-    console.log("Price", price);
-    console.log(metadata.image);
+
     return (
         <div className={styles.container}>
             <div className={styles.cubeLink}>
@@ -38,7 +37,7 @@ const NFTCard = ({ nftData }) => {
             </div>
             <div className={styles.header}>
                 <Link
-                    href={`/token/${metadata.assetContractAddress}/${metadata.tokenId}`}
+                    href={`/token/${nftData.assetContractAddress}/${metadata.tokenId}`}
                 >
                     <p className={styles.name}>
                         {metadata.name?.slice(0, 1).toUpperCase() +
@@ -62,11 +61,11 @@ const NFTCard = ({ nftData }) => {
                     >
                         {saleType == "Direct Listing" ? (
                             <span className="badge bg-success w-75">
-                                Available : Direct Listing
+                                Available : Direct Listing {pricePerToke}
                             </span>
                         ) : (
                             <span className="badge bg-success w-75">
-                                Available : Auction
+                                Available : Auction {bid}
                             </span>
                         )}
                     </div>

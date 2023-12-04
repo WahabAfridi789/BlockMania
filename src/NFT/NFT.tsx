@@ -25,6 +25,8 @@ export default function NFTComponent({ nft }: Props) {
     "marketplace-v3"
   );
 
+  console.log("NFT FROM NFT COMPONENT", nft)
+
   const { addToCart, error, setError } = useCartContext();
 
   const handleAddToCart = (event) => {
@@ -47,6 +49,7 @@ export default function NFTComponent({ nft }: Props) {
       tokenContract: NFT_COLLECTION_ADDRESS,
       tokenId: nft.metadata.id,
     });
+
 
   return (
     <>

@@ -36,7 +36,7 @@ const Home = ({ data }) => {
 
             <main id="main-content">
                 <HeroArea data={content["hero-section"]} />
-                <Buy />
+                {/* <Buy /> */}
                 <GetDirectListings />
                 <GetAuctions />
                 <GetAllNfts />

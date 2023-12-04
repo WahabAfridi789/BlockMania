@@ -40,11 +40,6 @@ const GetDirectListings = () => {
         error: englishAuctionsError,
     } = useEnglishAuctions(marketplace, { start: 0, count: 100 });
 
-    // console.log("nftData", nftData);
-    // console.log("marketplace", marketplace);
-    // console.log("directListings", directListings);
-    // console.log("englishAuctions", englishAuctions);
-
     return (
         <div className="container mt-4">
             <h1>Direct Listings</h1>
