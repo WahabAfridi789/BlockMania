@@ -11,6 +11,7 @@ import "../assets/scss/style.scss";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { StateContextProvider } from "../context";
 import { CartContextProvider } from "../cartContext/CartContext";
+// import "../styles/globals.css";
 
 const activeChain = "mumbai";
 

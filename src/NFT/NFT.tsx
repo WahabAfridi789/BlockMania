@@ -28,9 +28,9 @@ export default function NFTComponent({ nft }: Props) {
   const { addToCart, error, setError } = useCartContext();
 
   const handleAddToCart = (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
     setError(null); // Clear previous errors
-    
+
     addToCart(nft);
   };
 
@@ -51,12 +51,12 @@ export default function NFTComponent({ nft }: Props) {
   return (
     <>
 
-<Link
-              href={`/token/${NFT_COLLECTION_ADDRESS}/${nft.metadata.id}`}
-           
-              
-            >
-      <ThirdwebNftMedia metadata={nft.metadata} className={styles.nftImage} />
+      <Link
+        href={`/token/${NFT_COLLECTION_ADDRESS}/${nft.metadata.id}`}
+
+
+      >
+        <ThirdwebNftMedia metadata={nft.metadata} className={styles.nftImage} />
       </Link>
 
       <p className={styles.nftTokenId}>Token ID #{nft.metadata.id}</p>
@@ -68,18 +68,21 @@ export default function NFTComponent({ nft }: Props) {
         ) : directListing && directListing[0] ? (
           <div className={styles.nftPriceContainer}>
             <div>
+              <h1 >
+                Direct Listing
+              </h1>
               <p className={styles.nftPriceLabel}>Price</p>
               <p className={styles.nftPriceValue}>
                 {`${directListing[0]?.currencyValuePerToken.displayValue}
           ${directListing[0]?.currencyValuePerToken.symbol}`}
               </p>
 
-              <button className="bg-primary"  onClick={handleAddToCart}
-             >
-             
-Add to cart
-            </button>
-            {error && <p style={{ color: 'red' }}>{error}</p>}
+              <button className="bg-primary" onClick={handleAddToCart}
+              >
+
+                Add to cart
+              </button>
+              {error && <p style={{ color: 'red' }}>{error}</p>}
             </div>
           </div>
         ) : auctionListing && auctionListing[0] ? (
@@ -90,12 +93,12 @@ Add to cart
                 {`${auctionListing[0]?.minimumBidCurrencyValue.displayValue}
           ${auctionListing[0]?.minimumBidCurrencyValue.symbol}`}
               </p>
-              <button className="bg-primary"  onClick={handleAddToCart}
-             >
-             
-Add to cart
-            </button>
-            {error && <p style={{ color: 'red' }}>{error}</p>}
+              <button className="bg-primary" onClick={handleAddToCart}
+              >
+
+                Add to cart
+              </button>
+              {error && <p style={{ color: 'red' }}>{error}</p>}
             </div>
           </div>
         ) : (
@@ -103,14 +106,14 @@ Add to cart
             <div>
               <p className={styles.nftPriceLabel}>Price</p>
               <p className={styles.nftPriceValue}>Not for sale</p>
-              <button className="bg-primary"  onClick={handleAddToCart}
-             >
-             
-Add to cart
-            </button>
-            
+              <button className="bg-primary" onClick={handleAddToCart}
+              >
+
+                Add to cart
+              </button>
+
             </div>
-          
+
           </div>
         )}
       </div>

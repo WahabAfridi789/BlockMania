@@ -76,7 +76,7 @@ const Cart = () => {
                     <table>
                         <thead>
                             <tr>
-                                <th>Name</th>
+                                <th className="bg-red-900">Name</th>
                                 <th>Description</th>
                                 <th>Owner</th>
                                 <th>Staus</th>
@@ -91,7 +91,9 @@ const Cart = () => {
                                     <td>{item.metadata.description}</td>
 
                                     <td>{item.owner}</td>
-                                    <td>Not for sale</td>
+                                    <td className="bg-red-900 ">
+                                        Not for sale
+                                    </td>
                                     <td>
                                         <img
                                             src={item.metadata.image}

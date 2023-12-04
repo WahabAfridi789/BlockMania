@@ -35,10 +35,10 @@ export default function NFTGrid({
         data.map((nft) =>
           !overrideOnclickBehavior ? (
             <article className={styles.nftContainer}>
-            
+
               <NFT nft={nft} />
-          
-            {/* <button className="bg-primary"  onClick={handleAddToCart}
+
+              {/* <button className="bg-primary"  onClick={handleAddToCart}
              >
              
 Add to cart
