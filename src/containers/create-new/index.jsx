@@ -7,7 +7,7 @@ import Button from "@ui/button";
 import ProductModal from "@components/modals/product-modal";
 import ErrorText from "@ui/error-text";
 import { toast } from "react-toastify";
-import { useStorageUpload, ConnectWallet } from "@thirdweb-dev/react";
+import { ConnectWallet } from "@thirdweb-dev/react";
 import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 
 import { useStateContext } from "src/context";
@@ -156,19 +156,19 @@ const CreateNewArea = ({ className, space }) => {
         ],
     };
 
-      const handlePreview = (e) => {
-          e.preventDefault(); // Prevent the default form submission behavior
-          console.log(data);
+    const handlePreview = (e) => {
+        e.preventDefault(); // Prevent the default form submission behavior
+        console.log(data);
 
-          // Your existing code for setting previewData and displaying the modal
-          if (selectedImage) {
-              setPreviewData({
-                  ...data,
-                  imageUrl: ipfsUrl,
-              });
-              setShowProductModal(true);
-          }
-      };
+        // Your existing code for setting previewData and displaying the modal
+        if (selectedImage) {
+            setPreviewData({
+                ...data,
+                imageUrl: ipfsUrl,
+            });
+            setShowProductModal(true);
+        }
+    };
 
     const onSubmit = async (data, e) => {
         setLoading(true);
@@ -178,13 +178,11 @@ const CreateNewArea = ({ className, space }) => {
             ...data,
             imageUrl: ipfsUrl,
 
-            attributes: 
-                 selectedTraits,
-            
+            attributes: selectedTraits,
         };
 
         console.log("Form Data:", formData);
-    
+
         try {
             const response = await fetch("/api/mint-api", {
                 method: "POST",

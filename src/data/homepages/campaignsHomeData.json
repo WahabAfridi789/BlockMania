@@ -29,8 +29,8 @@
                 },
                 {
                     "id": 2,
-                    "content": "Browse Campaigns",
-                    "path": "/exploreCampaigns"
+                    "content": "My Campaigns",
+                    "path": "/myCampaigns"
                 }
             ],
             "image": {

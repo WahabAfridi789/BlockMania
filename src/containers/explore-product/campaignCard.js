@@ -90,6 +90,7 @@ const CampaignCard = (data) => {
 
     return (
         <div className="card mb-4" style={{ width: "300px" }}>
+            sdfsdfs
             <Link
                 href={{
                     pathname: "/campaignDetail",

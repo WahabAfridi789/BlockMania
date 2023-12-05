@@ -14,6 +14,7 @@ import ExploreCampaigns from "./exploreCampaigns";
 // import { CampaignDetails, CreateCampaign, campaignHome, Profile } from './pages/campaignPagesExport.js';
 
 import productData from "../data/products.json";
+import GetCampaigns from "../components/getCampaigns/getCampaigns";
 
 // Demo Data
 
@@ -38,10 +39,7 @@ const Home = () => {
             />
             <main id="main-content">
                 <HeroArea data={content["hero-section"]} />
-
-                <ExploreCampaigns />
-
-                {/* <CampaignDetails /> */}
+                <GetCampaigns />
             </main>
             <Footer data={content["brand-section"]} space={3} />
         </Wrapper>

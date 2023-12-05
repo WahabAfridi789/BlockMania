@@ -18,8 +18,8 @@
             },
             {
                 "id": 414,
-                "text": "Browse Campaigns",
-                "path": "/exploreCampaigns",
+                "text": "My Campaigns",
+                "path": "/myCampaigns",
                 "icon": "feather-package"
             }
         ]
