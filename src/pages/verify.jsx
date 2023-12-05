@@ -10,12 +10,14 @@ import Button from "@ui/button";
 import ProductModal from "@components/modals/product-modal";
 import { toast } from "react-toastify";
 import axios from "axios";
+import { useRouter } from "next/router";
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
 }
 
 const Support = () => {
     const { uploadToIPFS } = useStateContext();
+    const router = useRouter();
 
     const [showProductModal, setShowProductModal] = useState(false);
     const [cnicImageSelected, setCnicImageSelected] = useState(null);
@@ -24,6 +26,7 @@ const Support = () => {
 
     const [uploadedImageFile, setUploadedImageFile] = useState(null);
     const [selfieImageFile, setSelfieImageFile] = useState(null);
+    const [isVerified, setIsVerified] = useState(false);
 
     const notifyError = (e) => toast.error(e);
     const notifySuccess = (e) => toast.success(e);
@@ -94,7 +97,7 @@ const Support = () => {
 
                         video.pause();
                         video.src = "";
-                        video.srcObject = null;
+                        // video.srcObject = null;
 
                         captureButton.remove();
                         video.remove();
@@ -154,6 +157,24 @@ const Support = () => {
 
             if (res.data.verified == true) {
                 notifySuccess("User Verified");
+                setIsVerified(true);
+                const user = JSON.parse(localStorage.getItem("user"));
+                const res = await axios.put(
+                    `http://localhost:5000/updateVerification/${user._id}`,
+                    {
+                        isVerified: true,
+                    }
+                );
+
+                notifySuccess("User Verification Status Updated");
+
+                console.log("User Verification Status Updated", res);
+                localStorage.setItem(
+                    "user",
+                    JSON.stringify({ ...user, isVerified: true })
+                );
+
+                router.push("/");
             }
 
             console.log("response", res);
@@ -195,7 +216,11 @@ const Support = () => {
                 notifyError(error.message);
             }
             // Optionally, you can display an error message to the user or take corrective actions
+        } finally {
+            setLoading(false);
         }
+
+        //update the user verified status
 
         // Here you can proceed to upload the files to Cloudinary or any other cloud storage service
         // You can use these files directly for uploading
@@ -339,12 +364,37 @@ const Support = () => {
                     >
                         <div className="col-md-12 col-xl-8 mt_lg--15 mt_md--15 mt_sm--15">
                             <div className="input-box">
-                                <Button
-                                    fullwidth
-                                    onClick={() => handleVerify()}
-                                >
-                                    Upload
-                                </Button>
+                                {isVerified ? (
+                                    <Button
+                                        fullwidth
+                                        disabled
+                                        style={{
+                                            backgroundColor: "#28a745",
+                                            color: "#fff",
+                                        }}
+                                    >
+                                        Verified
+                                    </Button>
+                                ) : (
+                                    <Button
+                                        fullwidth
+                                        onClick={handleVerify}
+                                        disabled={loading}
+                                    >
+                                        {loading ? (
+                                            <>
+                                                <span
+                                                    className="spinner-border spinner-border-sm me-2"
+                                                    role="status"
+                                                    aria-hidden="true"
+                                                />
+                                                Loading...
+                                            </>
+                                        ) : (
+                                            "Verify"
+                                        )}
+                                    </Button>
+                                )}
                             </div>
                         </div>
                     </div>
