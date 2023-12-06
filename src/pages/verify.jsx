@@ -166,6 +166,10 @@ const Support = () => {
                     }
                 );
 
+                if (res.data.verified == false) {
+                    notifyError("User Verification Failed");
+                }
+
                 notifySuccess("User Verification Status Updated");
 
                 console.log("User Verification Status Updated", res);
@@ -174,7 +178,7 @@ const Support = () => {
                     JSON.stringify({ ...user, isVerified: true })
                 );
 
-                router.push("/");
+                // router.push("/");
             }
 
             console.log("response", res);
