@@ -232,7 +232,7 @@ const Support = () => {
             <Header />
             <main id="main-content">
                 <Breadcrumb
-                    pageTitle="Verify Identityr"
+                    pageTitle="Verify Identity"
                     currentPage="Verify Identity"
                 />
                 {/* <div className="container ">
@@ -245,160 +245,183 @@ const Support = () => {
                     <button onClick={handleVerify}>Verify</button>
                 </div> */}
 
-                <div className="container">
-                    <div className="row g-5">
-                        <div className="col-lg-3 offset-1 ml_md--0 ml_sm--0">
-                            <div className="upload-area">
-                                <div className="upload-formate mb--50">
-                                    <h6 className="title">Upload CNIC file</h6>
-                                    <p className="formate">
-                                        Please upload your CNIC file (Front)
-                                    </p>
-                                </div>
-
-                                <div className="brows-file-wrapper">
-                                    <input
-                                        name="file"
-                                        id="file"
-                                        type="file"
-                                        className="inputfile"
-                                        data-multiple-caption="{count} files selected"
-                                        multiple
-                                        onChange={imageChange}
-                                    />
-                                    {cnicImageSelected && (
-                                        <img
-                                            id="createfileImage"
-                                            src={URL.createObjectURL(
-                                                cnicImageSelected
-                                            )}
-                                            alt=""
-                                            data-black-overlay="6"
-                                            style={{
-                                                width: "100%",
-                                                height: "100%",
-                                                objectFit: "cover",
-
-                                                borderRadius: "10px",
-                                            }}
-                                        />
-                                    )}
-
-                                    <label
-                                        htmlFor="file"
-                                        title="No File Choosen"
-                                    >
-                                        <i className="feather-upload" />
-                                        <span className="text-center">
-                                            Choose a File
-                                        </span>
-                                        <p className="text-center mt--10">
-                                            PNG, GIF, WEBP, MP4 or MP3. <br />{" "}
-                                            Max 10Mb.
-                                        </p>
-                                    </label>
+                {isVerified ? (
+                    <div
+                        className="container"
+                        style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            marginTop: "30px",
+                        }}
+                    >
+                        <div className="row">
+                            <div className="col-md-12">
+                                <div className="alert alert-success">
+                                    <strong>Success!</strong> Your account is
+                                    already verified.
                                 </div>
                             </div>
                         </div>
+                    </div>
+                ) : (
+                    <div className="container">
+                        <div className="row g-5">
+                            <div className="col-lg-3 offset-1 ml_md--0 ml_sm--0">
+                                <div className="upload-area">
+                                    <div className="upload-formate mb--50">
+                                        <h6 className="title">
+                                            Upload CNIC file
+                                        </h6>
+                                        <p className="formate">
+                                            Please upload your CNIC file (Front)
+                                        </p>
+                                    </div>
 
-                        <div className="col-lg-7">
-                            <div className="form-wrapper-one">
-                                <div className="row">
-                                    <div
-                                        className="col-md-12"
-                                        style={{
-                                            display: "flex",
-                                            justifyContent: "center",
-                                            alignItems: "center",
-                                        }}
-                                    >
-                                        <video
-                                            id="video"
-                                            width="640"
-                                            height="480"
-                                            autoPlay
-                                        ></video>
-
-                                        {selfieImageFile && (
+                                    <div className="brows-file-wrapper">
+                                        <input
+                                            name="file"
+                                            id="file"
+                                            type="file"
+                                            className="inputfile"
+                                            data-multiple-caption="{count} files selected"
+                                            multiple
+                                            onChange={imageChange}
+                                        />
+                                        {cnicImageSelected && (
                                             <img
                                                 id="createfileImage"
                                                 src={URL.createObjectURL(
-                                                    selfieImageFile
+                                                    cnicImageSelected
                                                 )}
                                                 alt=""
                                                 data-black-overlay="6"
+                                                style={{
+                                                    width: "100%",
+                                                    height: "100%",
+                                                    objectFit: "cover",
+
+                                                    borderRadius: "10px",
+                                                }}
                                             />
                                         )}
-                                    </div>
 
-                                    <div
-                                        className="col-md-12"
-                                        style={{
-                                            display: "flex",
-                                            justifyContent: "center",
-                                            alignItems: "center",
-                                        }}
-                                        id="captureButton"
-                                    >
-                                        <div className="input-box">
-                                            <Button
-                                                fullwidth
-                                                onClick={() => takeSelfie()}
-                                            >
-                                                Capture
-                                            </Button>
+                                        <label
+                                            htmlFor="file"
+                                            title="No File Choosen"
+                                        >
+                                            <i className="feather-upload" />
+                                            <span className="text-center">
+                                                Choose a File
+                                            </span>
+                                            <p className="text-center mt--10">
+                                                PNG, GIF, WEBP, MP4 or MP3.{" "}
+                                                <br /> Max 10Mb.
+                                            </p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-7">
+                                <div className="form-wrapper-one">
+                                    <div className="row">
+                                        <div
+                                            className="col-md-12"
+                                            style={{
+                                                display: "flex",
+                                                justifyContent: "center",
+                                                alignItems: "center",
+                                            }}
+                                        >
+                                            <video
+                                                id="video"
+                                                width="640"
+                                                height="480"
+                                                autoPlay
+                                            ></video>
+
+                                            {selfieImageFile && (
+                                                <img
+                                                    id="createfileImage"
+                                                    src={URL.createObjectURL(
+                                                        selfieImageFile
+                                                    )}
+                                                    alt=""
+                                                    data-black-overlay="6"
+                                                />
+                                            )}
+                                        </div>
+
+                                        <div
+                                            className="col-md-12"
+                                            style={{
+                                                display: "flex",
+                                                justifyContent: "center",
+                                                alignItems: "center",
+                                            }}
+                                            id="captureButton"
+                                        >
+                                            <div className="input-box">
+                                                <Button
+                                                    fullwidth
+                                                    onClick={() => takeSelfie()}
+                                                >
+                                                    Capture
+                                                </Button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div
-                        className="row mt--30"
-                        style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                        }}
-                    >
-                        <div className="col-md-12 col-xl-8 mt_lg--15 mt_md--15 mt_sm--15">
-                            <div className="input-box">
-                                {isVerified ? (
-                                    <Button
-                                        fullwidth
-                                        disabled
-                                        style={{
-                                            backgroundColor: "#28a745",
-                                            color: "#fff",
-                                        }}
-                                    >
-                                        Verified
-                                    </Button>
-                                ) : (
-                                    <Button
-                                        fullwidth
-                                        onClick={handleVerify}
-                                        disabled={loading}
-                                    >
-                                        {loading ? (
-                                            <>
-                                                <span
-                                                    className="spinner-border spinner-border-sm me-2"
-                                                    role="status"
-                                                    aria-hidden="true"
-                                                />
-                                                Loading...
-                                            </>
-                                        ) : (
-                                            "Verify"
-                                        )}
-                                    </Button>
-                                )}
+                        <div
+                            className="row mt--30"
+                            style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                            }}
+                        >
+                            <div className="col-md-12 col-xl-8 mt_lg--15 mt_md--15 mt_sm--15">
+                                <div className="input-box">
+                                    {isVerified ? (
+                                        <Button
+                                            fullwidth
+                                            disabled
+                                            style={{
+                                                backgroundColor: "#28a745",
+                                                color: "#fff",
+                                            }}
+                                        >
+                                            Verified
+                                        </Button>
+                                    ) : (
+                                        <Button
+                                            fullwidth
+                                            onClick={handleVerify}
+                                            disabled={loading}
+                                        >
+                                            {loading ? (
+                                                <>
+                                                    <span
+                                                        className="spinner-border spinner-border-sm me-2"
+                                                        role="status"
+                                                        aria-hidden="true"
+                                                    />
+                                                    Loading...
+                                                </>
+                                            ) : (
+                                                "Verify"
+                                            )}
+                                        </Button>
+                                    )}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                )}
             </main>
             <Footer />
         </Wrapper>
