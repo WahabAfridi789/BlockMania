@@ -8,7 +8,7 @@ import HeroArea from "@containers/hero";
 import ServiceArea from "@containers/services";
 import NewsletterArea from "@containers/newsletter";
 import { normalizedData } from "@utils/methods";
-import Buy from "./buy";
+// import Buy from "./buy";
 import homepageData from "../data/homepages/home.json";
 import GetDirectListings from "../components/getListings/getDirectListings";
 import GetAuctions from "../components/getAuctions/getAuctions";
@@ -36,10 +36,11 @@ const Home = ({ data }) => {
 
             <main id="main-content">
                 <HeroArea data={content["hero-section"]} />
+
                 {/* <Buy /> */}
+                <GetAllNfts />
                 <GetDirectListings />
                 <GetAuctions />
-                <GetAllNfts />
 
                 <ServiceArea data={content["service-section"]} />
                 <NewsletterArea data={content["newsletter-section"]} />

@@ -48,9 +48,6 @@ const NFTCard = (nftData) => {
                             nftData.nftData.asset.name.slice(1)}
                     </p>
                 </Link>
-                <p>
-                    Add to Cart <PlusCircle color="#00A4FE" />
-                </p>
             </div>
             <p className={styles.description}>
                 {nftData.nftData.asset.description}

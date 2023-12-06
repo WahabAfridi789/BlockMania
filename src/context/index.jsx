@@ -41,6 +41,7 @@ export const StateContextProvider = ({ children }) => {
         contract,
         "createCampaign"
     );
+    const [allNfts, setAllNfts] = useState([]);
     const [error, setError] = useState();
 
     const { contract: nftCollectionContract } = useContract(
@@ -50,6 +51,20 @@ export const StateContextProvider = ({ children }) => {
     const { data: allCollectionNfts, isLoading: isCollectionLoading } = useNFTs(
         nftCollectionContract
     );
+
+    const updateAllNfts = (newNfts) => {
+        setAllNfts((prevNfts) => {
+            // Merge newNfts with prevNfts and filter out duplicates based on some unique identifier like an ID
+            const uniqueNfts = [
+                ...prevNfts,
+                ...newNfts.filter(
+                    (newNft) =>
+                        !prevNfts.some((prevNft) => prevNft.id === newNft.id)
+                ),
+            ];
+            return uniqueNfts;
+        });
+    };
 
     const address = useAddress();
     const connect = useMetamask();
@@ -157,6 +172,9 @@ export const StateContextProvider = ({ children }) => {
                 uploadToIPFS,
                 allCollectionNfts,
                 isCollectionLoading,
+
+                updateAllNfts,
+                allNfts,
             }}
         >
             {children}

@@ -16,48 +16,44 @@ import NftCard from "./nftcard";
 
 import {useStateContext} from "../../context";
 
+
+
 const GetDirectListings = () => {
     const { contract } = useContract(NFT_COLLECTION_ADDRESS);
     const { data: nftData, isLoading: nftIsLoading } = useNFTs(contract);
-    const [loadingDirect, setLoadingDirect] = React.useState(false);
-    const [loadingAuction, setLoadingAuction] = React.useState(false);
+
 
     const {       allCollectionNfts,
                 isCollectionLoading} = useStateContext();
 
+                // console.log("allCollectionNfts",allCollectionNfts)
 
 
-    const { contract: marketplace, isLoading: loadingContract } = useContract(
-        MARKETPLACE_ADDRESS,
-        "marketplace-v3"
-    );
 
-    const {
-        data: directListings,
-        isLoading: loadingDirectListings,
-        error: directListingsError,
-    } = useDirectListings(marketplace, { start: 0, count: 100 });
+    // const { contract: marketplace, isLoading: loadingContract } = useContract(
+    //     MARKETPLACE_ADDRESS,
+    //     "marketplace-v3"
+    // );
 
-    const {
-        data: directListingsCount,
-        isLoading: loadingDirectListingsCount,
-        error: errorDirectListingsCount,
-    } = useDirectListingsCount(marketplace);
+    // const {
+    //     data: directListings,
+    //     isLoading: loadingDirectListings,
+    //     error: directListingsError,
+    // } = useDirectListings(marketplace, { start: 0, count: 100 });
 
- 
-    const {
-        data: englishAuctions,
-        isLoading: loadingEnglishAuctions,
-        error: englishAuctionsError,
-    } = useEnglishAuctions(marketplace, { start: 0, count: 100 });
-
-    console.log("nftData", nftData);
+    // const {
+    //     data: directListingsCount,
+    //     isLoading: loadingDirectListingsCount,
+    //     error: errorDirectListingsCount,
+    // } = useDirectListingsCount(marketplace);
 
  
+    // const {
+    //     data: englishAuctions,
+    //     isLoading: loadingEnglishAuctions,
+    //     error: englishAuctionsError,
+    // } = useEnglishAuctions(marketplace, { start: 0, count: 100 });
 
- 
-
-      
 
 
     return (
@@ -84,7 +80,7 @@ const GetDirectListings = () => {
                     </>
                 )}
 
-                {directListingsError && <p>Error loading direct listings</p>}
+               
             </div>
         </div>
     );

@@ -97,6 +97,7 @@ import Link from "next/link";
 
 const NFTCard = ({ nftData }) => {
     const [status, setStatus] = useState(true);
+
     const {
         amountCollected,
         deadline,

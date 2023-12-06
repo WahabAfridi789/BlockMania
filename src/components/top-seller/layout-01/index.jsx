@@ -47,16 +47,10 @@ const TopSeller = ({
 );
 
 TopSeller.propTypes = {
-    name: PropTypes.string.isRequired,
+    name: PropTypes.string,
     total_sale: PropTypes.number,
-    slug: PropTypes.string.isRequired,
-    image: PropTypes.shape({
-        src: PropTypes.oneOfType([PropTypes.shape(), PropTypes.string])
-            .isRequired,
-        alt: PropTypes.string,
-        width: PropTypes.number,
-        height: PropTypes.number,
-    }).isRequired,
+    slug: PropTypes.string,
+    image: PropTypes.string,
     className: PropTypes.string,
     isVarified: PropTypes.bool,
     followBtn: PropTypes.bool,

@@ -10,7 +10,7 @@ export default function Buy() {
     console.log(contract);
     const { data, isLoading } = useNFTs(contract);
 
-    console.log(data);
+    console.log("DATAAA", data);
 
     return (
         <Container maxWidth="lg">

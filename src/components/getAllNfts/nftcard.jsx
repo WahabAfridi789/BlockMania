@@ -5,26 +5,31 @@ import { PlusCircle } from "lucide-react";
 import Link from "next/link";
 import IsNftForSale from "../isNftForSale/isNftForSale";
 const Web3 = require("web3");
-
+import { useCartContext } from "../../cartContext/CartContext";
+import {
+    MARKETPLACE_ADDRESS,
+    NFT_COLLECTION_ADDRESS,
+} from "../../const/contractAddresses";
 const NFTCard = ({ nftData, allCollectionNfts }) => {
     const web3 = new Web3();
     let price = 0;
     let isAuction = false;
     let isDirect = false;
-
+    const { addToCart, error, setError } = useCartContext();
     const { available, saleType, bid, pricePerToke } = IsNftForSale(nftData);
+    const handleAddToCart = (event) => {
+        event.preventDefault();
+        setError(null); // Clear previous errors
 
-    console.log("NFTCARD", nftData);
-    console.log("ALL NFTS", allCollectionNfts);
+        addToCart(nftData);
+    };
 
     const metadata = nftData?.metadata || {}; // Access metadata directly
 
     return (
         <div className={styles.container}>
             <div className={styles.cubeLink}>
-                <Link
-                    href={`/token/${metadata.assetContractAddress}/${metadata.tokenId}`}
-                >
+                <Link href={`/token/${NFT_COLLECTION_ADDRESS}/${metadata.id}`}>
                     <Image
                         id="cube"
                         src={metadata.image != "asd" && metadata.image}
@@ -44,7 +49,7 @@ const NFTCard = ({ nftData, allCollectionNfts }) => {
                             metadata.name?.slice(1)}
                     </p>
                 </Link>
-                <p>
+                <p onClick={handleAddToCart}>
                     Add to Cart <PlusCircle color="#00A4FE" />
                 </p>
             </div>

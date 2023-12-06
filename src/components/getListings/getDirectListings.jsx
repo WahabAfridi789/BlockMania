@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
     NFT_COLLECTION_ADDRESS,
     MARKETPLACE_ADDRESS,
@@ -12,6 +12,7 @@ import {
 } from "@thirdweb-dev/react";
 
 import NftCard from "./nftcard";
+import { useStateContext } from "../../context";
 
 const GetDirectListings = () => {
     const { contract } = useContract(NFT_COLLECTION_ADDRESS);

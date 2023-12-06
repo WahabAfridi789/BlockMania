@@ -17,7 +17,8 @@ const UserDropdown = ({ onDisconnect, ethBalance }) => {
 
     console.log("USERRR", user);
 
-    const isVarified = true;
+    const isVarified = user?.isVerified;
+    // const isVarified = false;
 
     return (
         <div className="icon-box">
@@ -31,61 +32,83 @@ const UserDropdown = ({ onDisconnect, ethBalance }) => {
                     width={38}
                     height={38}
                 />
+                {/* <AvatarComponent
+                    name={user.fullName}
+                    image={user.profilePicture}
+                    className="avatar"
+                    isVarified={isVarified}
+                    followBtn={false}
+                /> */}
             </Anchor>
-            <AvatarComponent
-                name={user.fullName}
-                image={user.profilePicture}
-                className="avatar"
-                isVarified={isVarified}
-                followBtn={false}
-            />
 
             <div className="rn-dropdown">
                 <div className="rn-inner-top">
-                    <div>
-                        <h4 className="title">
-                            <Anchor path="/author">
-                                {user.fullName}
-                                {isVarified ? (
-                                    <span
-                                        className="badge ml-2 badge-success "
-                                        style={{
-                                            fontSize: "10px",
-                                            padding: "5px 10px",
-                                            borderRadius: "10px",
-                                            background: "#079EFE",
-                                        }}
-                                    >
-                                        Verified
-                                    </span>
-                                ) : (
-                                    <span className="badge ml-2 badge-danger">
-                                        Not Verified
-                                    </span>
-                                )}
-                            </Anchor>
-                        </h4>
-
-                        <div
-                            className={clsx(
-                                "thumbnail",
-                                isVarified && "varified"
-                            )}
-                        >
-                            {user.profilePicture && (
-                                <Anchor path="hell">
-                                    <Image
-                                        src={user.profilePicture.src}
-                                        alt={user.profilePicture?.alt || name}
-                                        width={user.profilePicture?.width || 54}
-                                        height={
-                                            user.profilePicture?.height || 54
-                                        }
+                    <div className="title">
+                        <Anchor path="/author">
+                            <div
+                                style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "space-between",
+                                }}
+                            >
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                    }}
+                                >
+                                    <AvatarComponent
+                                        name={user.fullName}
+                                        image={user.profilePicture}
+                                        className="avatar"
+                                        isVarified={isVarified}
+                                        followBtn={false}
                                     />
-                                </Anchor>
-                            )}
-                        </div>
-                        <span>
+
+                                    {user.fullName}
+                                </div>
+
+                                <div className="icon">
+                                    {isVarified ? (
+                                        <span
+                                            className="badge ml-2 badge-success "
+                                            style={{
+                                                fontSize: "10px",
+                                                padding: "5px 10px",
+                                                borderRadius: "10px",
+                                                background: "#079EFE",
+                                            }}
+                                        >
+                                            Verified
+                                        </span>
+                                    ) : (
+                                        <span
+                                            className="badge ml-2 badge-danger"
+                                            style={{
+                                                fontSize: "10px",
+                                                padding: "5px 10px",
+                                                borderRadius: "10px",
+                                                background: "#FF0000",
+                                            }}
+                                        >
+                                            Not Verified
+                                        </span>
+                                    )}
+                                </div>
+                            </div>
+                        </Anchor>
+
+                        <span
+                            style={{
+                                fontSize: "12px",
+                                color: "#999",
+                                fontWeight: "400",
+                                display: "block",
+                                marginTop: "5px",
+                            }}
+                        >
                             <Anchor path="#">{user.email}</Anchor>
                         </span>
                     </div>
