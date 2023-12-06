@@ -22,12 +22,12 @@ const UserDropdown = ({ onDisconnect, ethBalance }) => {
 
     return (
         <div className="icon-box">
-            <Anchor
-                path="/author"
+            <Link
+                href="/author"
                 className={clsx("thumbnail", isVarified && "varified")}
             >
                 <Image
-                    src={user.profilePicture}
+                    src={user?.profilePicture}
                     alt="Images"
                     width={38}
                     height={38}
@@ -39,7 +39,7 @@ const UserDropdown = ({ onDisconnect, ethBalance }) => {
                     isVarified={isVarified}
                     followBtn={false}
                 /> */}
-            </Anchor>
+            </Link>
 
             <div className="rn-dropdown">
                 <div className="rn-inner-top">

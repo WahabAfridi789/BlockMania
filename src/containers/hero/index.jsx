@@ -12,87 +12,112 @@ import {
     ImageType,
 } from "@utils/types";
 
+import { useStateContext } from "../../context";
+
 const HeroArea = ({
     data: { headings, texts, buttons, image, items, clients },
-}) => (
-    <div className="banner-area banner-16 pt--100 pb--120 pt_md--70 pt_sm--30 pb_md--90 pb_sm--50 bg-color--2">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-6 order-lg-1 order-md-2 order-sm-2 order-2">
-                    <div className="left-banner-16-wrapepr mt_md--100 mt_sm--100   ">
-                        {headings?.[0]?.content && (
-                            <h1
-                                className="title"
-                                dangerouslySetInnerHTML={{
-                                    __html: headings[0].content,
-                                }}
-                            />
-                        )}
-                        {texts?.[0]?.content && (
-                            <p
-                                style={{
-                                    textAlign: "justify",
-                                    textJustify: "inter-word",
-                                }}
-                                className="disc"
-                                dangerouslySetInnerHTML={{
-                                    __html: texts[0].content,
-                                }}
-                            />
-                        )}
+}) => {
+    const {
+        campaignsCount,
+        auctionsCount,
 
-                        {/* Hero Button group */}
-                        <div
-                            className="button-group d-flex flex-wrap"
-                        >
-                            {buttons?.map(({ content, id, ...btn }, i) => (
-                                <Button
-                                    {...btn}
-                                    key={id}
-                                    className={
-                                        i !== buttons.length - 1 ? "mr--30" : ""
-                                    }
-                                >
-                                    {content}
-                                </Button>
-                            ))}
-                        </div>
+        directListingsCount,
+    } = useStateContext();
 
-                        {/* Animated Counter badges here */}
-                        <div className="odometer-area-slide ">
-                            {items?.map((item, i) => (
-                                <FunFact
-                                    data-sal-delay={400 + i * 200}
-                                    data-sal="slide-left"
-                                    data-sal-duration="800"
-                                    key={item.id}
-                                    title={item.title}
-                                    counter={item.counter}
-                                />
-                            ))}
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-6 order-lg-2 order-md-1 order-sm-1 order-1">
-                    <Tilt
-                        tiltReverse
-                        tiltMaxAngleX={3}
-                        tiltMaxAngleY={3}
-                        perspective={500}
-                        gyroscope
-                    >
-                        <div className="tilt-image-banner-16">
-                            {image?.src && (
-                                <Image
-                                    className="tilt"
-                                    src={image.src}
-                                    alt={image?.alt || "Nft-profile"}
-                                    width={697}
-                                    height={557}
-                                    priority
+    const newItems = [
+        {
+            title: "Campaigns",
+            counter: 15,
+        },
+        {
+            title: "Auctions",
+            counter: 3,
+        },
+        {
+            title: "NFTs",
+            counter: 47,
+        },
+    ];
+
+    return (
+        <div className="banner-area banner-16 pt--100 pb--120 pt_md--70 pt_sm--30 pb_md--90 pb_sm--50 bg-color--2">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-6 order-lg-1 order-md-2 order-sm-2 order-2">
+                        <div className="left-banner-16-wrapepr mt_md--100 mt_sm--100   ">
+                            {headings?.[0]?.content && (
+                                <h1
+                                    className="title"
+                                    dangerouslySetInnerHTML={{
+                                        __html: headings[0].content,
+                                    }}
                                 />
                             )}
-                            {/* <div className="joined-people-wrapper">
+                            {texts?.[0]?.content && (
+                                <p
+                                    style={{
+                                        textAlign: "justify",
+                                        textJustify: "inter-word",
+                                    }}
+                                    className="disc"
+                                    dangerouslySetInnerHTML={{
+                                        __html: texts[0].content,
+                                    }}
+                                />
+                            )}
+
+                            {/* Hero Button group */}
+                            <div className="button-group d-flex flex-wrap">
+                                {buttons?.map(({ content, id, ...btn }, i) => (
+                                    <Button
+                                        {...btn}
+                                        key={id}
+                                        className={
+                                            i !== buttons.length - 1
+                                                ? "mr--30"
+                                                : ""
+                                        }
+                                    >
+                                        {content}
+                                    </Button>
+                                ))}
+                            </div>
+
+                            {/* Animated Counter badges here */}
+                            <div className="odometer-area-slide ">
+                                {newItems?.map((item, i) => (
+                                    <FunFact
+                                        data-sal-delay={400 + i * 200}
+                                        data-sal="slide-left"
+                                        data-sal-duration="800"
+                                        key={item.id}
+                                        title={item.title}
+                                        counter={item.counter}
+                                    />
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-6 order-lg-2 order-md-1 order-sm-1 order-1">
+                        <Tilt
+                            tiltReverse
+                            tiltMaxAngleX={3}
+                            tiltMaxAngleY={3}
+                            perspective={500}
+                            gyroscope
+                        >
+                            <div className="tilt-image-banner-16">
+                                {image?.src && (
+                                    <Image
+                                        className="tilt"
+                                        src={image.src}
+                                        alt={image?.alt || "Nft-profile"}
+                                        width={697}
+                                        height={557}
+                                        priority
+                                    />
+                                )}
+                                {/* <div className="joined-people-wrapper">
                                 <div className="product-share-wrapper">
                                     <div className="profile-share">
                                         {clients?.map((client) => (
@@ -136,13 +161,14 @@ const HeroArea = ({
                                     />
                                 )}
                             </div> */}
-                        </div>
-                    </Tilt>
+                            </div>
+                        </Tilt>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-);
+    );
+};
 
 HeroArea.propTypes = {
     data: PropTypes.shape({

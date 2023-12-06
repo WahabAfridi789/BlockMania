@@ -12,16 +12,11 @@ import {
 } from "@thirdweb-dev/react";
 
 import NftCard from "../getListings/nftcard";
-import { useStateContext } from "../../context";
 const GetAuctions = () => {
-    const { contract } = useContract(NFT_COLLECTION_ADDRESS);
-    const { data: nftData, isLoading: nftIsLoading } = useNFTs(contract);
-
     const { contract: marketplace, isLoading: loadingContract } = useContract(
         MARKETPLACE_ADDRESS,
         "marketplace-v3"
     );
-    const { updateAllNfts } = useStateContext();
 
     const {
         data: englishAuctions,
@@ -30,12 +25,6 @@ const GetAuctions = () => {
     } = useEnglishAuctions(marketplace, { start: 0, count: 100 });
 
     // console.log("englishAuctions", englishAuctions);
-
-    useEffect(() => {
-        if (englishAuctions) {
-            updateAllNfts(englishAuctions);
-        }
-    }, [englishAuctions]);
 
     return (
         <div className="container mt-4">

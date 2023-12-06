@@ -11,7 +11,6 @@ import {
 import { ethers } from "ethers";
 import { NFT_COLLECTION_ADDRESS } from "../const/contractAddresses";
 
-import axios from "axios";
 import { create as ipfsHttpClient } from "ipfs-http-client";
 
 const projectId = "2WUz6avAarbZ3JBmFww1rnSa6Rq";
@@ -37,11 +36,14 @@ export const StateContextProvider = ({ children }) => {
     const { contract } = useContract(
         "0x6A85796498095646D887D5Ab647631986F2D20A9"
     );
+
+    const [campaignsCount, setCampaignsCount] = useState(0);
+    const [auctionsCount, setAuctionsCount] = useState(0);
+    const [directListingsCount, setDirectListingsCount] = useState(0);
     const { mutateAsync: createCampaign } = useContractWrite(
         contract,
         "createCampaign"
     );
-    const [allNfts, setAllNfts] = useState([]);
     const [error, setError] = useState();
 
     const { contract: nftCollectionContract } = useContract(
@@ -51,20 +53,6 @@ export const StateContextProvider = ({ children }) => {
     const { data: allCollectionNfts, isLoading: isCollectionLoading } = useNFTs(
         nftCollectionContract
     );
-
-    const updateAllNfts = (newNfts) => {
-        setAllNfts((prevNfts) => {
-            // Merge newNfts with prevNfts and filter out duplicates based on some unique identifier like an ID
-            const uniqueNfts = [
-                ...prevNfts,
-                ...newNfts.filter(
-                    (newNft) =>
-                        !prevNfts.some((prevNft) => prevNft.id === newNft.id)
-                ),
-            ];
-            return uniqueNfts;
-        });
-    };
 
     const address = useAddress();
     const connect = useMetamask();
@@ -107,6 +95,8 @@ export const StateContextProvider = ({ children }) => {
             image: campaign.image,
             pId: i,
         }));
+
+        setCampaignsCount(parsedCampaings.length);
 
         return parsedCampaings;
     };
@@ -172,9 +162,12 @@ export const StateContextProvider = ({ children }) => {
                 uploadToIPFS,
                 allCollectionNfts,
                 isCollectionLoading,
+                campaignsCount,
+                auctionsCount,
 
-                updateAllNfts,
-                allNfts,
+                directListingsCount,
+                setAuctionsCount,
+                setDirectListingsCount,
             }}
         >
             {children}

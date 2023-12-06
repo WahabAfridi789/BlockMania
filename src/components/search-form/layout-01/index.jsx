@@ -34,11 +34,7 @@ import {
 const SearchForm = ({}) => {
     const [searchTerm, setSearchTerm] = useState("");
     const [searchResults, setSearchResults] = useState([]);
-    const { allCollectionNfts, isCollectionLoading, allNfts } =
-        useStateContext();
-    console.log("allCollectionNfts", allCollectionNfts);
-
-    console.log("allNfts", allNfts);
+    const { allCollectionNfts, isCollectionLoading } = useStateContext();
 
     const router = useRouter();
     console.log("Results", searchResults);
